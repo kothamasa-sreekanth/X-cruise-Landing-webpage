@@ -1,0 +1,369 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  background-color: rgb(0, 0, 51);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index: 100;
+}
+
+.menu{
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.menu a {
+  padding: 8px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.image-logo {
+  padding-left: 10px;
+  width: 80px;
+}
+
+.hero {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true");
+  height: 550PX;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 8px;
+  gap: 1rem;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
+.hero button {
+  background-color: orange;
+  color: #fff;
+  border-radius: 5%;
+  border: none;
+  padding: 0.8rem 1.1rem;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.heading hr {
+  position: absolute;
+  z-index: 20;
+  width: 13.5%;
+  rotate: 90deg;
+  bottom: 3.8rem;
+  left: -3.7rem;
+  height: 10px;
+  background-color: orange;
+  
+}
+
+/* .heading p {
+  margin-left: 1.5rem;
+}
+
+.heading h2 {
+  margin-left: 1.5rem;
+} */
+
+.discover {
+  margin: 1rem 1rem;
+  text-align: center;
+}
+
+.heading{
+  border-left: 5px solid orange;
+  padding-left: 10px;
+}
+
+.popular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.pills{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: max-content;
+}
+
+.pills p {
+  font-weight: normal;
+  margin-left: 0rem;
+}
+
+.pills div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 0.7rem 1rem;
+  transition: .4s;
+}
+.pills div:hover{
+  cursor: pointer;
+  transform: scale(1.12);
+}
+
+.pills img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+
+.banner {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.banner-image {
+  height: 300px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  border-radius: 16px;
+}
+
+.banner div {
+  background-color: #383636;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 20;
+  right: 2rem;
+  margin-top: 0.6rem;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  opacity: 0.5;
+}
+
+.banner-icon {
+  height: 1rem;
+}
+
+.banner-text{
+  position: relative;
+  bottom: 2rem;
+  color: #fff;
+  z-index: 20;
+  font-size: 20px;
+  padding-left: 1rem;
+  text-align: start;
+}
+
+.cards-section{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  margin-top: 0.8rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  transition: .4s;
+  border-radius: 16px;
+}
+.card-image:hover{
+  transform: scale(1.07);
+}
+
+.card div {
+  background-color: #383636;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 20;
+  right: 1rem;
+  margin-top: 0.6rem;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  opacity: 0.5;
+}
+
+.card-icon {
+  height: 1rem;
+}
+
+.card-text{
+  position: absolute;
+  bottom: 1rem;
+  color: #fff;
+  z-index: 20;
+  font-size: 20px;
+  padding-left: 1rem;
+  text-align: start;
+}
+
+#contact h3 {
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+#contact hr {
+  width: 25%;
+  margin: auto;
+  height: 5px;
+  background-color: orange;
+  border: none;
+  border-radius: 20px;
+}
+
+.contact_info {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_info div {
+  border: 2px solid gray;
+  margin: 1rem 1rem;
+  text-align: center;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* width: 100%; */
+}
+
+.contact_info div p {
+  opacity: 0.8;
+}
+
+.footer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(0, 0, 51);
+}
+
+.footer-contents {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-contents div{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-contents h3 {
+  color: orange;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.social-icons img {
+  width: 2rem;
+}
+
+.footer hr {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.footer_rights{
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  .cards-section{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar{
+      flex-direction: row;
+  }
+
+  .discover {
+      text-align: start;
+  }
+
+  .popular {
+      flex-direction: row;
+  }
+
+  .pills {
+      flex-direction: row;
+  }
+
+  .cards-section{
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  #contact hr{
+      width: 10%;
+  }
+
+  .contact_info {
+      flex-direction: row;
+  }
+
+  .contact_info div {
+      width: 50%;
+  }
+
+  .footer-contents {
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .footer-contents div{
+      text-align: start;
+  }
+}
